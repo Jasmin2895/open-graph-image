@@ -6,11 +6,11 @@ Create the open graph image
 
 ### `bold-text`
 
-**Required** The text which will appear as bold on image.
+**Required** The text which will appear as bold text on image.
 
 ### `plain-text`
 
-**Required** The text which will appear as normal on image.
+**Required** The text which will appear as normal text on image.
 
 ## Outputs
 
