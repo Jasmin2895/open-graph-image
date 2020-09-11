@@ -38,8 +38,8 @@ jobs:
         run: mkdir -p dist
 
       - name: Set firefox display
-        run: export DISPLAY=:0
-        
+        run: DISPLAY=:0 firefox
+
       - name: generate open graph image
         uses: ./
         with:
