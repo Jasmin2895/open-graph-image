@@ -10,5 +10,5 @@ outputs:
     images:
         description: "open graph image generated with input text"
 runs:
-    using: "node"
+    using: "node12"
     main: "dist/index.js"
