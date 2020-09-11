@@ -17,8 +17,9 @@ Create the open graph image
 Image is stored in the root directory.
 
 ## Example usage
-
+```
 uses: actions/open-graph-image@v1
 with:
   bold-text: 'Open graph image'
   plain-text: 'for social media platform'
+```
