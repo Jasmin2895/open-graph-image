@@ -20,5 +20,5 @@ Image is stored in the root directory.
 
 uses: actions/open-graph-image@v1
 with:
-  bold-text: "Open-graph-image"
-  plain-text: "for social media platform"
+  bold-text: 'Open graph image'
+  plain-text: 'for social media platform'
