@@ -37,9 +37,6 @@ jobs:
       - name: Create dist folder if note exists
         run: mkdir -p dist
 
-      - name: Set firefox display
-        run: DISPLAY :0
-
       - name: generate open graph image
         uses: ./
         with:
