@@ -40,7 +40,7 @@ jobs:
       - name: generate open graph image
         uses: ./
         with:
-          bold-text: "Jasmin Virdi"
+          bold-text: "Jasmin"
           plain-text: "is a Software Engineer"
       # Runs a set of commands using the runners shell
       - name: Push changes
