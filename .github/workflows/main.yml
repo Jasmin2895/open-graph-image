@@ -28,6 +28,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Puppeteer install
+        run: PUPPETEER_PRODUCT=firefox npm install
+
       - name: Pull from current branch
         run: git pull origin ${GITHUB_REF##*/}
 
