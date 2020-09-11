@@ -20,10 +20,11 @@ async function snap(url, file) {
 
 (async () => {
     browser = await puppeteer.launch({
+        headless: false,
         product: 'firefox',
         extraPrefsFirefox: {
             // Enable additional Firefox logging from its protocol implementation
-            'remote.log.level': 'Trace',
+            // 'remote.log.level': 'Trace',
         },
         // Make browser logs visible
         dumpio: true,
