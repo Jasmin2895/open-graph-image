@@ -7,8 +7,6 @@ name: CI
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -16,18 +14,34 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
+    name: Generate open graph image
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+        with:
+          ref: ${{ github.head_ref }}
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
 
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Pull from current branch
+        run: git pull origin ${GITHUB_REF##*/}
+
+      - name: Create dist folder if note exists
+        run: mkdir -p dist
+
+      - name: generate open graph image
+        uses: ./
+        with:
+          bold-text: "Jasmin Virdi"
+          plain-text: "is a Software Engineer"
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Add images pulled from headless browser to folder
+          commit_options: '--no-verify --signoff'
