@@ -1,0 +1,14 @@
+name: "Open Graph social cards"
+description: "Create open graph social cards which can be shared on facebook, twitter, linkedin etc"
+
+inputs:
+    bold-text:
+        description: "bold text in the image"
+    plain-text:
+        description: "plain text in the image"
+outputs:
+    images:
+        description: "open graph image generated with input text"
+runs:
+    using: "node"
+    main: "index.js"

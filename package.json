@@ -1,0 +1,24 @@
+{
+  "name": "open-graph-image",
+  "version": "1.0.0",
+  "description": "Create the open graph image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jasmin2895/open-graph-image.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jasmin2895/open-graph-image/issues"
+  },
+  "homepage": "https://github.com/Jasmin2895/open-graph-image#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.5",
+    "puppeteer": "^5.3.0"
+  }
+}
