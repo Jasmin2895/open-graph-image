@@ -20,7 +20,7 @@ async function snap(url, file) {
 
 (async () => {
     browser = await puppeteer.launch({
-        headless: false,
+        // headless: false,
         product: 'firefox',
         extraPrefsFirefox: {
             // Enable additional Firefox logging from its protocol implementation
