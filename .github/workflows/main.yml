@@ -28,8 +28,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Puppeteer install
-        run: PUPPETEER_PRODUCT=firefox npm i puppeteer
+      # - name: Puppeteer install
+      #   run: PUPPETEER_PRODUCT=firefox npm i puppeteer
       
       - name: Pull from current branch
         run: git pull origin ${GITHUB_REF##*/}
@@ -39,6 +39,7 @@ jobs:
 
       - name: generate open graph image
         uses: ./
+        run: PUPPETEER_PRODUCT=firefox npm i puppeteer
         with:
           bold-text: "Open graph image"
           plain-text: "for social media platform"
