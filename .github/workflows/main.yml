@@ -54,4 +54,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: open-graph-image
-          path: /*.png
+          path: og-image.now.sh.png
