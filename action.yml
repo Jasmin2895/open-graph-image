@@ -4,8 +4,12 @@ description: "Create open graph social cards which can be shared on facebook, tw
 inputs:
     bold-text:
         description: "bold text in the image"
+        required: true
     plain-text:
         description: "plain text in the image"
+        required: true
+    theme:
+        description: "open graph theme it can be light or dark"
 outputs:
     images:
         description: "open graph image generated with input text"
