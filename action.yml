@@ -10,6 +10,7 @@ inputs:
         required: true
     theme:
         description: "Theme can be black or white"
+        required: true
 outputs:
     images:
         description: "open graph image generated with input text"
