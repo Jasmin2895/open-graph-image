@@ -662,7 +662,7 @@ async function snap(url, file) {
 (async () => {
     let boldText = core.getInput("bold-text");
     let plainText = core.getInput("plain-text");
-    let customTheme = core.getInput("theme");
+    let customTheme = core.getInput("themes");
 
     const url = `https://og-image.now.sh/**${boldText}**%20${plainText}?theme=${customTheme}&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-color-logo.svg`;
     const segments = url.split("/");
