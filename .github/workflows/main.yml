@@ -55,3 +55,6 @@ jobs:
         with:
           name: open-graph-image
           path: og-image.now.sh.png
+
+      - name: Download all workflow run artifacts
+        uses: actions/download-artifact@v2
