@@ -6,6 +6,8 @@ inputs:
         description: "bold text in the image"
     plain-text:
         description: "plain text in the image"
+    theme:
+        description: "Theme can be black or white"
 outputs:
     images:
         description: "open graph image generated with input text"
