@@ -39,7 +39,6 @@ jobs:
 
       - name: generate open graph image
         uses: ./
-        run: PUPPETEER_PRODUCT=firefox npm i puppeteer
         with:
           bold-text: "Open graph image"
           plain-text: "for social media platform"
