@@ -19,7 +19,8 @@
   "homepage": "https://github.com/Jasmin2895/open-graph-image#readme",
   "dependencies": {
     "@actions/core": "^1.2.5",
-    "webshot": "^0.18.0"
+    "webshot": "^0.18.0",
+    "webshot-node": "^0.18.2"
   },
   "devDependencies": {
     "gulp": "^4.0.2"

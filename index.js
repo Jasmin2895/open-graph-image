@@ -1,5 +1,5 @@
 const core = require('@actions/core');
-const webshot = require('webshot');
+const webshot = require('webshot-node');
 
 // let browser, page;
 
