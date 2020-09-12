@@ -13,5 +13,4 @@ outputs:
         description: "open graph image generated with input text"
 runs:
     using: "node12"
-    pre: "dist/webshot.phantom.js"
     main: "dist/index.js"
