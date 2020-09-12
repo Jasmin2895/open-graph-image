@@ -20,5 +20,8 @@
   "dependencies": {
     "@actions/core": "^1.2.5",
     "webshot": "^0.18.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }
