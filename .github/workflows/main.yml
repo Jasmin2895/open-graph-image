@@ -49,3 +49,9 @@ jobs:
         with:
           commit_message: Add images pulled from headless browser to folder
           commit_options: '--no-verify --signoff'
+      
+      - name: Archive open graph image
+        uses: actions/upload-artifact@v2
+        with:
+          name: open-graph-image
+          path: /og-image.now.sh.png
