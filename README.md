@@ -39,3 +39,4 @@ Image is stored in the root directory.
 - name: Download all workflow run artifacts
   uses: actions/download-artifact@v2
 ```
+![Output Image](og-image.now.sh.png)
