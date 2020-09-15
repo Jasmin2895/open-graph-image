@@ -1,5 +1,5 @@
 # open-graph-image
-Create the open graph image
+Create social cards using open graph image.
 
 
 ## Inputs
