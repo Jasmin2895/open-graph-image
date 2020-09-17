@@ -661,9 +661,11 @@ async function snap(url, file) {
 
 (async () => {
     let customTheme = "light";
-    let boldText = core.getInput("bold-text").trim();
-    let plainText = core.getInput("plain-text").trim();
+    let boldText = core.getInput("bold-text");
+    let plainText = core.getInput("plain-text");
 
+    boldText = boldText.trim();
+    plainText = plainText.trim();
     // check if bold text is available
     if (boldText.length > 0)
         boldText = `**${boldText}**`
