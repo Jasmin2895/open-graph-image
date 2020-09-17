@@ -28,11 +28,9 @@ async function snap(url, file) {
 
 (async () => {
     let customTheme = "light";
-    // let boldText = core.getInput("bold-text").trim();
-    // let plainText = core.getInput("plain-text").trim();
+    let boldText = core.getInput("bold-text").trim();
+    let plainText = core.getInput("plain-text").trim();
 
-    let boldText = "".trim();
-    let plainText = "Virdi";
     // check if bold text is available
     if (boldText.length > 0)
         boldText = `**${boldText}**`
