@@ -352,8 +352,8 @@ module.exports = require("child_process");
 /***/ 184:
 /***/ (function(module) {
 
-module.exports.location = "/usr/local/bin/phantomjs"
-module.exports.platform = "linux"
+module.exports.location = "phantom/bin/phantomjs"
+module.exports.platform = "darwin"
 module.exports.arch = "x64"
 
 
